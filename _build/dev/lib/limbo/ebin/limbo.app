@@ -5,4 +5,4 @@
                         'Elixir.Mix.Tasks.Limbo.Test',
                         'Elixir.Mix.Tasks.Limbo.TestCommit']},
               {registered,[]},
-              {vsn,"0.1.0"}]}.
+              {vsn,"0.1.1"}]}.
