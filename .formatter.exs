@@ -1,7 +1,7 @@
 [
   import_deps: [],
   inputs: [
-    "apps/**/mix.exs",
-    "apps/**/{config,lib,test}/**/*.{ex,exs}"
+    "**/mix.exs",
+    "**/{config,lib,test}/**/*.{ex,exs}"
   ]
 ]

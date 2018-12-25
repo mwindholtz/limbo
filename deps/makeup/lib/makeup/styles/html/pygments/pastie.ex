@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.PastieStyle do
   @moduledoc false
 
@@ -43,17 +42,17 @@ defmodule Makeup.Styles.HTML.PastieStyle do
     :generic_strong => "bold",
     :generic_subheading => "#666",
     :generic_traceback => "#aa0000"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "pastie",
-      long_name: "Pastie Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "pastie",
+                  long_name: "Pastie Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.RrtStyle do
   @moduledoc false
 
@@ -10,18 +9,18 @@ defmodule Makeup.Styles.HTML.RrtStyle do
     :name_variable => "#eedd82",
     :string => "#87ceeb",
     :comment => "#00ff00",
-    :comment_preproc => "#e5e5e5",
-
+    :comment_preproc => "#e5e5e5"
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "rrt",
-      long_name: "Rrt Style",
-      background_color: "#000000",
-      highlight_color: "#0000ff",
-      styles: @styles)
+                  short_name: "rrt",
+                  long_name: "Rrt Style",
+                  background_color: "#000000",
+                  highlight_color: "#0000ff",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

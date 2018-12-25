@@ -9,7 +9,7 @@ defmodule MakeupElixir.Mixfile do
       app: :makeup_elixir,
       version: @version,
       elixir: "~> 1.4",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps(),
       # Package
       package: package(),

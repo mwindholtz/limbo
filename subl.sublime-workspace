@@ -528,10 +528,10 @@
 			}
 		},
 		{
-			"file": "doc/404.html",
+			"file": "mix.exs",
 			"settings":
 			{
-				"buffer_size": 2741,
+				"buffer_size": 931,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -626,6 +626,7 @@
 		"/Users/mark/projects/mwindholtz/limbo/lib",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks",
+		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/limbo",
 		"/Users/mark/projects/mwindholtz/limbo/test"
 	],
 	"file_history":
@@ -821,13 +822,13 @@
 						"selection":
 						[
 							[
-								52,
-								52
+								436,
+								436
 							]
 						],
 						"settings":
 						{
-							"git_gutter_is_enabled": false,
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -839,25 +840,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "doc/404.html",
-					"semi_transient": true,
+					"file": "mix.exs",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2741,
+						"buffer_size": 931,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								918,
+								918
 							]
 						],
 						"settings":
 						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},

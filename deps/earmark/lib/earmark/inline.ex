@@ -225,10 +225,11 @@ defmodule Earmark.Inline do
     if match = Regex.run(context.rules.code, src) do
       [match, _, content] = match
       # Commonmark
-      content1 = content
-      |> String.trim()
-      |> String.replace(@squash_ws, " ")
-        
+      content1 =
+        content
+        |> String.trim()
+        |> String.replace(@squash_ws, " ")
+
       out = renderer.codespan(escape(content1, true))
       {behead(src, match), context, prepend(result, out), lnb}
     end

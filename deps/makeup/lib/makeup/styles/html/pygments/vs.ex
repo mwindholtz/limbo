@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.VisualStudioStyle do
   @moduledoc false
 
@@ -15,18 +14,18 @@ defmodule Makeup.Styles.HTML.VisualStudioStyle do
     :generic_heading => "bold",
     :generic_prompt => "bold",
     :generic_strong => "bold",
-    :generic_subheading => "bold",
-
+    :generic_subheading => "bold"
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "vs",
-      long_name: "VisualStudio Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "vs",
+                  long_name: "VisualStudio Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

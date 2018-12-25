@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.AutumnStyle do
   @moduledoc false
 
@@ -34,17 +33,17 @@ defmodule Makeup.Styles.HTML.AutumnStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #800080",
     :generic_traceback => "#aa0000"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "autumn",
-      long_name: "Autumn Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "autumn",
+                  long_name: "Autumn Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

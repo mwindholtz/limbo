@@ -3,7 +3,7 @@ defmodule Mix.Tasks.Limbo.TestCommit do
   ### In seperate terminal window run 
   ` MIX_ENV=test mix limbo.test_commit`
   This will run tests and save commits if/when the test passes, and nothing if test fails.
- 
+
   """
   use Mix.Task
   require Logger

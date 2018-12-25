@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.FruityStyle do
   @moduledoc false
 
@@ -17,18 +16,18 @@ defmodule Makeup.Styles.HTML.FruityStyle do
     :comment_preproc => "#ff0007 bold",
     :generic_heading => "#ffffff bold",
     :generic_output => "#444444 bg:#222222",
-    :generic_subheading => "#ffffff bold",
-
+    :generic_subheading => "#ffffff bold"
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "fruity",
-      long_name: "Fruity Style",
-      background_color: "#111111",
-      highlight_color: "#333333",
-      styles: @styles)
+                  short_name: "fruity",
+                  long_name: "Fruity Style",
+                  background_color: "#111111",
+                  highlight_color: "#333333",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

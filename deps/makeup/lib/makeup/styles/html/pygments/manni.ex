@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.ManniStyle do
   @moduledoc false
 
@@ -42,17 +41,17 @@ defmodule Makeup.Styles.HTML.ManniStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #003300",
     :generic_traceback => "#99CC66"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "manni",
-      long_name: "Manni Style",
-      background_color: "#f0f3f3",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "manni",
+                  long_name: "Manni Style",
+                  background_color: "#f0f3f3",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

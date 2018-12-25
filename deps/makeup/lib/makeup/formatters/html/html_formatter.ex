@@ -3,7 +3,8 @@ defmodule Makeup.Formatters.HTML.HTMLFormatter do
   A turn the list of tokens into a 
   """
 
-  @group_highlight_js "lib/makeup/formatters/html/scripts/group_highlighter_javascript.js" |> File.read!
+  @group_highlight_js "lib/makeup/formatters/html/scripts/group_highlighter_javascript.js"
+                      |> File.read!()
 
   defp render_token(escaped_value, css_class, meta) do
     group_id = meta[:group_id]
@@ -11,7 +12,11 @@ defmodule Makeup.Formatters.HTML.HTMLFormatter do
 
     classes = [
       css_class || [],
-      if selectable == false do " unselectable" else [] end
+      if selectable == false do
+        " unselectable"
+      else
+        []
+      end
     ]
 
     [
@@ -19,7 +24,11 @@ defmodule Makeup.Formatters.HTML.HTMLFormatter do
       ~S( class="),
       classes,
       ~S("),
-      if group_id do [~S( data-group-id="), group_id, ~S(")] else [] end,
+      if group_id do
+        [~S( data-group-id="), group_id, ~S(")]
+      else
+        []
+      end,
       ">",
       escaped_value,
       ~S(</span>)
@@ -47,7 +56,7 @@ defmodule Makeup.Formatters.HTML.HTMLFormatter do
 
   defp escape_for(c) when is_integer(c) and c <= 127, do: c
 
-  defp escape_for(c) when is_integer(c) and c > 128, do: << c :: utf8 >>
+  defp escape_for(c) when is_integer(c) and c > 128, do: <<c::utf8>>
 
   defp escape_for(string) when is_binary(string) do
     string
@@ -89,7 +98,7 @@ defmodule Makeup.Formatters.HTML.HTMLFormatter do
   def format_inner_as_binary(tokens) do
     tokens
     |> format_inner_as_iolist
-    |> IO.iodata_to_binary
+    |> IO.iodata_to_binary()
   end
 
   @doc """
@@ -116,7 +125,7 @@ defmodule Makeup.Formatters.HTML.HTMLFormatter do
   def format_as_binary(tokens, opts \\ []) do
     tokens
     |> format_as_iolist(opts)
-    |> IO.iodata_to_binary
+    |> IO.iodata_to_binary()
   end
 
   @doc """

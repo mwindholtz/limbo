@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.Algol_NuStyle do
   @moduledoc false
 
@@ -17,18 +16,18 @@ defmodule Makeup.Styles.HTML.Algol_NuStyle do
     :operator_word => "bold",
     :comment => "italic #888",
     :comment_preproc => "bold noitalic #888",
-    :comment_special => "bold noitalic #888",
-
+    :comment_special => "bold noitalic #888"
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "algol_nu",
-      long_name: "Algol_Nu Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "algol_nu",
+                  long_name: "Algol_Nu Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

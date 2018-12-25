@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.SambaStyle do
   @moduledoc false
 
@@ -69,17 +68,17 @@ defmodule Makeup.Styles.HTML.SambaStyle do
     :generic_strong => "bold #000000",
     :generic_subheading => "bold #800080",
     :generic_traceback => "bold #a40000"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "samba",
-      long_name: "Samba Style",
-      background_color: "#f8f8f8",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "samba",
+                  long_name: "Samba Style",
+                  background_color: "#f8f8f8",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

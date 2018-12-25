@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.DefaultStyle do
   @moduledoc false
 
@@ -41,17 +40,17 @@ defmodule Makeup.Styles.HTML.DefaultStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #800080",
     :generic_traceback => "#04D"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "default",
-      long_name: "Default Style",
-      background_color: "#f8f8f8",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "default",
+                  long_name: "Default Style",
+                  background_color: "#f8f8f8",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

@@ -9,5 +9,4 @@ defmodule Makeup.Pickers do
 
   def pick_formatter!(nil), do: HTMLFormatter
   def pick_formatter!("html"), do: HTMLFormatter
-
 end

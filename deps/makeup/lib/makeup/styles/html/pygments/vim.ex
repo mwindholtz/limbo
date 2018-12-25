@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.VimStyle do
   @moduledoc false
 
@@ -28,17 +27,17 @@ defmodule Makeup.Styles.HTML.VimStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #800080",
     :generic_traceback => "#04D"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "vim",
-      long_name: "Vim Style",
-      background_color: "#000000",
-      highlight_color: "#222222",
-      styles: @styles)
+                  short_name: "vim",
+                  long_name: "Vim Style",
+                  background_color: "#000000",
+                  highlight_color: "#222222",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

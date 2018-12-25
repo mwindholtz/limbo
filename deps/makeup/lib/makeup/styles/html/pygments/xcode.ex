@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.XcodeStyle do
   @moduledoc false
 
@@ -21,18 +20,18 @@ defmodule Makeup.Styles.HTML.XcodeStyle do
     :number => "#1C01CE",
     :operator => "#000000",
     :comment => "#177500",
-    :comment_preproc => "#633820",
-
+    :comment_preproc => "#633820"
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "xcode",
-      long_name: "Xcode Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "xcode",
+                  long_name: "Xcode Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

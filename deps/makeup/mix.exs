@@ -10,7 +10,7 @@ defmodule Makeup.Mixfile do
       version: @version,
       elixir: "~> 1.4",
       elixirc_paths: compiler_paths(Mix.env()),
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps(),
       # Docs
       name: "Makeup",
@@ -18,7 +18,8 @@ defmodule Makeup.Mixfile do
       homepage_url: @url,
       aliases: [docs: &build_docs/1],
       docs: [
-        main: "readme", # The main page in the docs
+        # The main page in the docs
+        main: "readme",
         extras: [
           "README.md"
         ]
@@ -77,4 +78,3 @@ defmodule Makeup.Mixfile do
     Mix.shell().info("Docs built successfully")
   end
 end
-

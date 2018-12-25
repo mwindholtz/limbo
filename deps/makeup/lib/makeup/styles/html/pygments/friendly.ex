@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.FriendlyStyle do
   @moduledoc false
 
@@ -42,17 +41,17 @@ defmodule Makeup.Styles.HTML.FriendlyStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #800080",
     :generic_traceback => "#04D"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "friendly",
-      long_name: "Friendly Style",
-      background_color: "#f0f0f0",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "friendly",
+                  long_name: "Friendly Style",
+                  background_color: "#f0f0f0",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

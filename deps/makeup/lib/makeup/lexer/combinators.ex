@@ -44,7 +44,7 @@ defmodule Makeup.Lexer.Combinators do
   end
 
   def __token__(_rest, args, context, _line, _offset, token_type) do
-    {[{token_type, %{}, args |> :lists.reverse}], context}
+    {[{token_type, %{}, args |> :lists.reverse()}], context}
   end
 
   @doc false
@@ -57,12 +57,12 @@ defmodule Makeup.Lexer.Combinators do
   end
 
   def __token__(_rest, args, context, _line, _offset, token_type, attrs) do
-    {[{token_type, attrs, args |> :lists.reverse}], context}
+    {[{token_type, attrs, args |> :lists.reverse()}], context}
   end
 
   @doc false
   def __lexeme__(_rest, args, context, _line, _offset) do
-    result = args |> List.wrap |> :lists.reverse |> IO.iodata_to_binary
+    result = args |> List.wrap() |> :lists.reverse() |> IO.iodata_to_binary()
     {[result], context}
   end
 
@@ -113,18 +113,22 @@ defmodule Makeup.Lexer.Combinators do
   def many_surrounded_by(combinator, left, right) when is_binary(left) and is_binary(right) do
     token(left, :punctuation)
     |> concat(
-        repeat_until(
-          combinator,
-          [string(right)]))
+      repeat_until(
+        combinator,
+        [string(right)]
+      )
+    )
     |> concat(token(right, :punctuation))
   end
 
   def many_surrounded_by(combinator, left, right) do
     left
     |> concat(
-        repeat_until(
-          combinator,
-          [right]))
+      repeat_until(
+        combinator,
+        [right]
+      )
+    )
     |> concat(right)
   end
 
@@ -135,9 +139,11 @@ defmodule Makeup.Lexer.Combinators do
   def many_surrounded_by(combinator, left, right, ttype) do
     token(left, ttype)
     |> concat(
-        repeat_until(
-          combinator,
-          [string(right)]))
+      repeat_until(
+        combinator,
+        [string(right)]
+      )
+    )
     |> concat(token(right, ttype))
   end
 
@@ -148,7 +154,8 @@ defmodule Makeup.Lexer.Combinators do
 
   defp merge_chars_helper(_ttype, _attrs, [], []), do: []
 
-  defp merge_chars_helper(ttype, attrs, acc, [next | rest]) when is_integer(next) or is_binary(next) do
+  defp merge_chars_helper(ttype, attrs, acc, [next | rest])
+       when is_integer(next) or is_binary(next) do
     merge_chars_helper(ttype, attrs, [next | acc], rest)
   end
 
@@ -199,6 +206,3 @@ defmodule Makeup.Lexer.Combinators do
     |> traverse({__MODULE__, :collect_raw_chars_and_binaries, [ttype, attrs]})
   end
 end
-
-
-

@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.LovelaceStyle do
   @moduledoc false
 
@@ -51,17 +50,17 @@ defmodule Makeup.Styles.HTML.LovelaceStyle do
     :generic_strong => "bold",
     :generic_subheading => "#444444",
     :generic_traceback => "#2838b0"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "lovelace",
-      long_name: "Lovelace Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "lovelace",
+                  long_name: "Lovelace Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

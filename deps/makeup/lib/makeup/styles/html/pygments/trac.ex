@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.TracStyle do
   @moduledoc false
 
@@ -33,17 +32,17 @@ defmodule Makeup.Styles.HTML.TracStyle do
     :generic_strong => "bold",
     :generic_subheading => "#aaaaaa",
     :generic_traceback => "#aa0000"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "trac",
-      long_name: "Trac Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "trac",
+                  long_name: "Trac Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

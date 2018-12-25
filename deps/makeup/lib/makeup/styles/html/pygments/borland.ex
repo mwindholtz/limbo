@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.BorlandStyle do
   @moduledoc false
 
@@ -24,17 +23,17 @@ defmodule Makeup.Styles.HTML.BorlandStyle do
     :generic_strong => "bold",
     :generic_subheading => "#aaaaaa",
     :generic_traceback => "#aa0000"
-
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "borland",
-      long_name: "Borland Style",
-      background_color: "#ffffff",
-      highlight_color: "#ffffcc",
-      styles: @styles)
+                  short_name: "borland",
+                  long_name: "Borland Style",
+                  background_color: "#ffffff",
+                  highlight_color: "#ffffcc",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

@@ -1,4 +1,3 @@
-
 defmodule Makeup.Styles.HTML.MonokaiStyle do
   @moduledoc false
 
@@ -27,18 +26,18 @@ defmodule Makeup.Styles.HTML.MonokaiStyle do
     :generic_emph => "italic",
     :generic_inserted => "#a6e22e",
     :generic_strong => "bold",
-    :generic_subheading => "#75715e",
-
+    :generic_subheading => "#75715e"
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-      short_name: "monokai",
-      long_name: "Monokai Style",
-      background_color: "#272822",
-      highlight_color: "#49483e",
-      styles: @styles)
+                  short_name: "monokai",
+                  long_name: "Monokai Style",
+                  background_color: "#272822",
+                  highlight_color: "#49483e",
+                  styles: @styles
+                )
 
   def style() do
     @style_struct()

@@ -1,7 +1,7 @@
 defmodule Limbo.EmptyTest do
-  use  ExUnit.Case  
-  
+  use ExUnit.Case
+
   test "nothing" do
-    true  
+    true
   end
 end
