@@ -520,18 +520,28 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "mix.exs",
 			"settings":
 			{
-				"buffer_size": 779,
+				"buffer_size": 925,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "mix.exs",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 931,
+				"buffer_size": 870,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".formatter.exs",
+			"settings":
+			{
+				"buffer_size": 98,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -631,8 +641,8 @@
 	],
 	"file_history":
 	[
-		"/Users/mark/projects/mwindholtz/limbo/mix.exs",
 		"/Users/mark/projects/mwindholtz/limbo/README.md",
+		"/Users/mark/projects/mwindholtz/limbo/mix.exs",
 		"/Users/mark/projects/mwindholtz/limbo/config/config.exs",
 		"/Users/mark/projects/mwindholtz/limbo/doc/dist/sidebar_items-39e193082b.js",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/tcr/pull_push.ex",
@@ -811,48 +821,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 779,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								436,
-								436
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "mix.exs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 931,
+						"buffer_size": 925,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								918,
-								918
+								112,
+								112
 							]
 						],
 						"settings":
@@ -866,7 +847,65 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".formatter.exs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

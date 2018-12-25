@@ -6,7 +6,7 @@ Experiment in **Test && Commit || Revert**
 
 Add to deps()
 ```
-  {:limbo, "~> 0.1.0" }
+  {:limbo, "~> 0.1.1" }
 ```
 
 then run  
@@ -22,6 +22,9 @@ This will push commits to the trunk whenever they are ready
 ` MIX_ENV=test mix limbo.test_commit `
 This will run tests and save commits if test passes, and revert if it does not.
 
+
+#### Previous repo
+(test-commit-revert)[https://github.com/mwindholtz/test-commit-revert]
 
 #### References
 * [Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864)
