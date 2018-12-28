@@ -5,4 +5,4 @@
                         'Elixir.Mix.Tasks.Limbo.Low',
                         'Elixir.Mix.Tasks.Limbo.PullPush']},
               {registered,[]},
-              {vsn,"0.1.1"}]}.
+              {vsn,"0.1.2"}]}.
