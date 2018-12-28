@@ -35,4 +35,5 @@ Runs tests. If Tests pass commit to git else REVERT
 * [Kent Beck - TCR Pod Cast](https://hanselminutes.com/663/test-commit-revert-with-kent-beck)
 * [JB Rainsberger](https://blog.thecodewhisperer.com/permalink/the-worlds-shortest-article-on-test-and-commit-otherwise-revert)
 * [Thomas Deniffel](https://medium.com/@tdeniffel/limbo-test-commit-revert-a-test-alternative-to-tdd-6e6b03c22bec)
+* [Pending Flag from Oddmund Strømme](https://twitter.com/jraregris?lang=en)
 
