@@ -9,7 +9,7 @@ defmodule Mix.Tasks.Limbo.Low do
   require Logger
 
   @preferred_cli_env :test
-  @shortdoc "Runs Test-Commit-Revert Loop"
+  @shortdoc "Runs Test-Commit-Revert"
   def run(args) do
     args_string = List.to_string(args)
     IO.puts("RUNNING TESTS #{args_string}")
