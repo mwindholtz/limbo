@@ -4,11 +4,11 @@ fonts/icomoon.eot
 fonts/icomoon.svg
 fonts/icomoon.ttf
 fonts/icomoon.woff
-dist/sidebar_items-ba17007bbd.js
+dist/sidebar_items-d752fe0268.js
 api-reference.html
 search.html
 404.html
+Mix.Tasks.Limbo.High.html
+Mix.Tasks.Limbo.Low.html
 Mix.Tasks.Limbo.PullPush.html
-Mix.Tasks.Limbo.Test.html
-Mix.Tasks.Limbo.TestCommit.html
 index.html
