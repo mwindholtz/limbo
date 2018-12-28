@@ -18,13 +18,14 @@ then run
 `mix limbo.pull_push`
 This will push commits to the trunk whenever they are ready
 
-### In another window run 
+## In another window run the tests
+### Basic Usage
 ` MIX_ENV=test mix limbo.high `
-This will run tests and commit to git if test passes, and do nothing if test does not pass.
+Runs tests. If Tests pass commit to git else NOTHING
 
 ### Advanced Usage
 ` MIX_ENV=test mix limbo.low `
-This will run tests and save commits if test passes, and will REVERT if test does not pass.
+Runs tests. If Tests pass commit to git else REVERT
 
 #### Previous repo
 (test-commit-revert)[https://github.com/mwindholtz/test-commit-revert]
