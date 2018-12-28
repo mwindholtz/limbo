@@ -538,11 +538,10 @@
 			}
 		},
 		{
-			"file": ".formatter.exs",
+			"file": "lib/mix/tasks/limbo/test_commit.ex",
 			"settings":
 			{
-				"buffer_size": 98,
-				"encoding": "UTF-8",
+				"buffer_size": 775,
 				"line_ending": "Unix"
 			}
 		}
@@ -641,6 +640,7 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/projects/mwindholtz/limbo/.formatter.exs",
 		"/Users/mark/projects/mwindholtz/limbo/README.md",
 		"/Users/mark/projects/mwindholtz/limbo/mix.exs",
 		"/Users/mark/projects/mwindholtz/limbo/config/config.exs",
@@ -767,8 +767,7 @@
 		"/Users/mark/projects/Enbala/vpp/vpp/apps/event_router/test/content/telemetry_state_record_test.exs",
 		"/Users/mark/projects/Enbala/vpp/vpp/apps/event_router/lib/event_router.ex",
 		"/Users/mark/projects/Enbala/vpp/vpp/apps/api/test/fixtures/sample_water_heater_data_large.csv",
-		"/Users/mark/projects/Enbala/vpp/vpp/rel/package/files/opt/vpp/ui/node_modules/delegates/test/index.js",
-		"/Users/mark/projects/Enbala/vpp/vpp/apps/demand_response/lib/service/power_span/calc_task.ex"
+		"/Users/mark/projects/Enbala/vpp/vpp/rel/package/files/opt/vpp/ui/node_modules/delegates/test/index.js"
 	],
 	"find":
 	{
@@ -787,6 +786,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"ex_machina",
 			"tcr",
 			"Tcr",
 			"everted",
@@ -816,7 +816,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -847,7 +847,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -863,8 +863,8 @@
 						"selection":
 						[
 							[
-								108,
-								108
+								228,
+								228
 							]
 						],
 						"settings":
@@ -876,36 +876,38 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": ".formatter.exs",
-					"semi_transient": false,
+					"file": "lib/mix/tasks/limbo/test_commit.ex",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 98,
+						"buffer_size": 775,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								424,
+								435
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage"
+							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1524,7 +1526,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 370.0,
+	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

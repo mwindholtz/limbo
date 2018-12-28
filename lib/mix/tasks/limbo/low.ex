@@ -1,8 +1,8 @@
-defmodule Mix.Tasks.Limbo.Test do
+defmodule Mix.Tasks.Limbo.Low do
   @moduledoc """
   ### In seperate terminal window run 
-  ` MIX_ENV=test mix limbo.test `
-  This will run tests and save commits if/when the test passes, and revert if test fails.
+  ` MIX_ENV=test mix limbo.low `
+  This will run tests and save commits if/when the test passes, and REVERT if test fails.
 
   """
   use Mix.Task
@@ -17,7 +17,7 @@ defmodule Mix.Tasks.Limbo.Test do
 
     case Mix.Tasks.Test.run(~w|test #{args_string}|) do
       :ok ->
-        git(~w[commit -am working_limbo])
+        git(~w[commit -am limbo-commit])
 
       _ ->
         IO.puts("Test Failed. Code Reverted.")
