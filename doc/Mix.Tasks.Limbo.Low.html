@@ -70,6 +70,11 @@ mix limbo.low              </h1>
 
 <p><code class="inline">MIX_ENV=test mix limbo.low</code>
 This will run tests and save commits if/when the test passes, and REVERT if test fails.</p>
+<p>It will skip failing tests tagged with :wip</p>
+<pre><code class="nohighlight makeup elixir"><span class="na">@tag</span><span class="w"> </span><span class="ss">:wip</span><span class="w">
+</span><span class="n">test</span><span class="w"> </span><span class="s">&quot;skip wip&quot;</span><span class="w"> </span><span class="k" data-group-id="9980257456-1">do</span><span class="w">
+  </span><span class="n">assert</span><span class="w"> </span><span class="no">false</span><span class="w">
+</span><span class="k" data-group-id="9980257456-1">end</span></code></pre>
         </section>
 
         <section id="summary" class="details-list">

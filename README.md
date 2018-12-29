@@ -6,7 +6,7 @@ Experiment in **Test && Commit || Revert**
 
 Add to deps()
 ```
-  {:limbo, "~> 0.1.2" }
+  {:limbo, "~> 0.1.3" }
 ```
 
 then run  
