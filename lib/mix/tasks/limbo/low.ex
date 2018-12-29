@@ -15,13 +15,13 @@ defmodule Mix.Tasks.Limbo.Low do
     IO.puts("RUNNING TESTS #{args_string}")
     System.put_env("MIX_ENV", "test")
 
-    case Mix.Tasks.Test.run(~w|test #{args_string} --exclude pending|) do
+    case Mix.Tasks.Test.run(~w|test #{args_string} --exclude wip|) do
       :ok ->
         git(~w[commit -am limbo-commit])
 
       _ ->
         IO.puts("Test Failed. Code Reverted.")
-        git(~w[reset --hard  && mix test --only pending])
+        git(~w[reset --hard  && mix test --include wip])
     end
   end
 
