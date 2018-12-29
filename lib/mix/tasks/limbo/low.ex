@@ -4,6 +4,13 @@ defmodule Mix.Tasks.Limbo.Low do
   ` MIX_ENV=test mix limbo.low `
   This will run tests and save commits if/when the test passes, and REVERT if test fails.
 
+  It will skip failing tests tagged with :wip
+  ```
+  @tag :wip
+  test "skip wip" do
+    assert false
+  end
+  ```
   """
   use Mix.Task
   require Logger

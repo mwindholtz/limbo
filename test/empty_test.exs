@@ -2,11 +2,11 @@ defmodule Limbo.EmptyTest do
   use ExUnit.Case
 
   test "nothing" do
-    true
+    assert true
   end
 
   @tag :wip
   test "skip wip" do
-    true
+    assert false
   end
 end
