@@ -5,4 +5,5 @@
                         'Elixir.Makeup.Lexers.ElixirLexer.Helper',
                         'Elixir.Makeup.Lexers.ElixirLexer.Testing']},
               {registered,[]},
-              {vsn,"0.10.0"}]}.
+              {vsn,"0.10.0"},
+              {extra_applications,[logger]}]}.

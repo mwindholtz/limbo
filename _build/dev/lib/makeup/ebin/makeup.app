@@ -45,4 +45,5 @@
                         'Elixir.Makeup.Token.Utils',
                         'Elixir.Makeup.Token.Utils.Hierarchy']},
               {registered,[]},
-              {vsn,"0.5.5"}]}.
+              {vsn,"0.5.5"},
+              {extra_applications,[logger]}]}.

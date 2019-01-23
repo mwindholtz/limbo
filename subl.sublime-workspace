@@ -520,19 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "mix.exs",
+			"file": "test/empty_test.exs",
 			"settings":
 			{
-				"buffer_size": 925,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/mix/tasks/limbo/high.ex",
-			"settings":
-			{
-				"buffer_size": 761,
+				"buffer_size": 151,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,7 +532,7 @@
 			"file": "lib/mix/tasks/limbo/low.ex",
 			"settings":
 			{
-				"buffer_size": 813,
+				"buffer_size": 922,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -641,12 +632,13 @@
 	],
 	"file_history":
 	[
+		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/limbo/high.ex",
+		"/Users/mark/projects/mwindholtz/limbo/mix.exs",
 		"/Users/mark/projects/mwindholtz/limbo/README.md",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/limbo/low.ex",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/limbo/test_commit.ex",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/limbo/test.ex",
 		"/Users/mark/projects/mwindholtz/limbo/.formatter.exs",
-		"/Users/mark/projects/mwindholtz/limbo/mix.exs",
 		"/Users/mark/projects/mwindholtz/limbo/config/config.exs",
 		"/Users/mark/projects/mwindholtz/limbo/doc/dist/sidebar_items-39e193082b.js",
 		"/Users/mark/projects/mwindholtz/limbo/lib/mix/tasks/tcr/pull_push.ex",
@@ -767,8 +759,7 @@
 		"/Users/mark/projects/Enbala/vpp/vpp/mix.exs",
 		"/Users/mark/projects/Enbala/vpp/vpp/apps/event_router/lib/topic/telemetry_state_topic.ex",
 		"/Users/mark/projects/Enbala/vpp/vpp/apps/demand_response/lib/receiver.ex",
-		"/Users/mark/projects/Enbala/vpp/vpp/apps/topology/test/device_test.exs",
-		"/Users/mark/projects/Enbala/vpp/vpp/apps/event_router/test/content/telemetry_state_record_test.exs"
+		"/Users/mark/projects/Enbala/vpp/vpp/apps/topology/test/device_test.exs"
 	],
 	"find":
 	{
@@ -787,6 +778,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"0.1.2",
 			" Test-Commit-Revert Loop",
 			" Runs Test-Commit-Revert Loop",
 			"{:limbo, \"~> 0.1.1\" }",
@@ -826,27 +818,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "mix.exs",
+					"file": "test/empty_test.exs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 925,
+						"buffer_size": 151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								107
+								151,
+								151
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -857,50 +847,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "lib/mix/tasks/limbo/high.ex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 761,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								283,
-								283
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Elixir/Syntaxes/Elixir.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "lib/mix/tasks/limbo/low.ex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 813,
+						"buffer_size": 922,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								688,
-								695
+								821,
+								821
 							]
 						],
 						"settings":
