@@ -28,7 +28,8 @@ defmodule Mix.Tasks.Limbo.Low do
 
       _ ->
         IO.puts("Test Failed. Code Reverted.")
-        git(~w[reset --hard  && mix test --include wip])
+        git(~w[reset --hard])
+        Mix.Tasks.Test.run(~w|test #{args_string} --include wip|)
     end
   end
 
