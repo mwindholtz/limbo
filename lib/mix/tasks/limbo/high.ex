@@ -5,6 +5,7 @@ defmodule Mix.Tasks.Limbo.High do
   This will run tests and save commits if/when the test passes, and NOTHING if test fails.
 
   """
+
   use Mix.Task
   require Logger
 
