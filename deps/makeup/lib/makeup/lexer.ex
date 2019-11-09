@@ -9,12 +9,12 @@ defmodule Makeup.Lexer do
   Parses the smallest number of tokens that make sense.
   It's a `parsec`.
   """
-  @callback root_element(String.t()) :: T.parsec_result()
+  @callback root_element(String.t) :: T.parsec_result
 
   @doc """
   Parses the given string into a `parsec` result that inludes a list of tokens.
   """
-  @callback root(String.t()) :: T.parsec_result()
+  @callback root(String.t) :: T.parsec_result
 
   @doc """
   Postprocesses a list of tokens before matching the contained groups.
@@ -24,12 +24,13 @@ defmodule Makeup.Lexer do
   @doc """
   Matches groups in a list of tokens.
   """
-  @callback match_groups([T.token()], String.t()) :: [T.token()]
+  @callback match_groups([T.token()], String.t) :: [T.token()]
 
   @doc """
   Lexes a string into a list of tokens
   """
   @callback lex(String.t(), list()) :: [T.token()]
+
 
   @doc """
   Merges the token values into the original string.
@@ -57,21 +58,18 @@ defmodule Makeup.Lexer do
   @spec split_into_lines(list(T.token())) :: list(list(T.token()))
   def split_into_lines(tokens) do
     {lines, last_line} =
-      Enum.reduce(tokens, {[], []}, fn token, {lines, line} ->
+      Enum.reduce tokens, {[], []}, (fn token, {lines, line} ->
         {ttype, meta, text} = Postprocess.token_value_to_binary(token)
-
         case String.split(text, "\n") do
-          [_] ->
-            {lines, [token | line]}
-
+          [_] -> {lines, [token | line]}
           [part | parts] ->
-            first_line = [{ttype, meta, part} | line] |> :lists.reverse()
+            first_line = [{ttype, meta, part} | line] |> :lists.reverse
 
             all_but_last_line =
               parts
               |> Enum.slice(0..-2)
               |> Enum.map(fn tok_text -> [{ttype, meta, tok_text}] end)
-              |> :lists.reverse()
+              |> :lists.reverse
 
             last_line = [{ttype, meta, Enum.at(parts, -1)}]
 
@@ -90,11 +88,9 @@ defmodule Makeup.Lexer do
   """
   @spec merge(list(T.token())) :: list(T.token())
   def merge([{tag, meta, value1}, {tag, meta, value2} | rest]),
-    do: merge([{tag, meta, value1 <> value2} | rest])
-
+    do: merge [{tag, meta, value1 <> value2} | rest]
   def merge([token | rest]),
     do: [token | merge(rest)]
-
   def merge([]),
     do: []
 end

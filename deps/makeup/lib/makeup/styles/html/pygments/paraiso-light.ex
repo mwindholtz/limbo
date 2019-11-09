@@ -1,3 +1,4 @@
+
 defmodule Makeup.Styles.HTML.ParaisoLightStyle do
   @moduledoc false
 
@@ -34,18 +35,18 @@ defmodule Makeup.Styles.HTML.ParaisoLightStyle do
     :generic_inserted => "#48b685",
     :generic_prompt => "bold #8d8687",
     :generic_strong => "bold",
-    :generic_subheading => "bold #5bc4bf"
+    :generic_subheading => "bold #5bc4bf",
+
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-                  short_name: "paraiso_light",
-                  long_name: "ParaisoLight Style",
-                  background_color: "#e7e9db",
-                  highlight_color: "#a39e9b",
-                  styles: @styles
-                )
+      short_name: "paraiso_light",
+      long_name: "ParaisoLight Style",
+      background_color: "#e7e9db",
+      highlight_color: "#a39e9b",
+      styles: @styles)
 
   def style() do
     @style_struct()

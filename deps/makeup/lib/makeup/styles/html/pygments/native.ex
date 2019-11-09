@@ -1,3 +1,4 @@
+
 defmodule Makeup.Styles.HTML.NativeStyle do
   @moduledoc false
 
@@ -32,17 +33,17 @@ defmodule Makeup.Styles.HTML.NativeStyle do
     :generic_strong => "bold",
     :generic_subheading => "underline #ffffff",
     :generic_traceback => "#d22323"
+
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-                  short_name: "native",
-                  long_name: "Native Style",
-                  background_color: "#202020",
-                  highlight_color: "#404040",
-                  styles: @styles
-                )
+      short_name: "native",
+      long_name: "Native Style",
+      background_color: "#202020",
+      highlight_color: "#404040",
+      styles: @styles)
 
   def style() do
     @style_struct()

@@ -1,3 +1,4 @@
+
 defmodule Makeup.Styles.HTML.MurphyStyle do
   @moduledoc false
 
@@ -49,17 +50,17 @@ defmodule Makeup.Styles.HTML.MurphyStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #800080",
     :generic_traceback => "#04D"
+
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-                  short_name: "murphy",
-                  long_name: "Murphy Style",
-                  background_color: "#ffffff",
-                  highlight_color: "#ffffcc",
-                  styles: @styles
-                )
+      short_name: "murphy",
+      long_name: "Murphy Style",
+      background_color: "#ffffff",
+      highlight_color: "#ffffcc",
+      styles: @styles)
 
   def style() do
     @style_struct()

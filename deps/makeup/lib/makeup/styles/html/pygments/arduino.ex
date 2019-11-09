@@ -1,3 +1,4 @@
+
 defmodule Makeup.Styles.HTML.ArduinoStyle do
   @moduledoc false
 
@@ -16,18 +17,18 @@ defmodule Makeup.Styles.HTML.ArduinoStyle do
     :number => "#8A7B52",
     :operator => "#728E00",
     :comment => "#95a5a6",
-    :comment_preproc => "#728E00"
+    :comment_preproc => "#728E00",
+
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-                  short_name: "arduino",
-                  long_name: "Arduino Style",
-                  background_color: "#ffffff",
-                  highlight_color: "#ffffcc",
-                  styles: @styles
-                )
+      short_name: "arduino",
+      long_name: "Arduino Style",
+      background_color: "#ffffff",
+      highlight_color: "#ffffcc",
+      styles: @styles)
 
   def style() do
     @style_struct()

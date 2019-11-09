@@ -1,3 +1,4 @@
+
 defmodule Makeup.Styles.HTML.EmacsStyle do
   @moduledoc false
 
@@ -41,17 +42,17 @@ defmodule Makeup.Styles.HTML.EmacsStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #800080",
     :generic_traceback => "#04D"
+
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-                  short_name: "emacs",
-                  long_name: "Emacs Style",
-                  background_color: "#f8f8f8",
-                  highlight_color: "#ffffcc",
-                  styles: @styles
-                )
+      short_name: "emacs",
+      long_name: "Emacs Style",
+      background_color: "#f8f8f8",
+      highlight_color: "#ffffcc",
+      styles: @styles)
 
   def style() do
     @style_struct()

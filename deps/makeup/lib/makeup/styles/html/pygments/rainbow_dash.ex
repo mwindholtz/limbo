@@ -1,3 +1,4 @@
+
 defmodule Makeup.Styles.HTML.RainbowDashStyle do
   @moduledoc false
 
@@ -37,17 +38,17 @@ defmodule Makeup.Styles.HTML.RainbowDashStyle do
     :generic_strong => "bold",
     :generic_subheading => "bold #2c5dcd",
     :generic_traceback => "#c5060b"
+
   }
 
   alias Makeup.Styles.HTML.Style
 
   @style_struct Style.make_style(
-                  short_name: "rainbow_dash",
-                  long_name: "RainbowDash Style",
-                  background_color: "#ffffff",
-                  highlight_color: "#ffffcc",
-                  styles: @styles
-                )
+      short_name: "rainbow_dash",
+      long_name: "RainbowDash Style",
+      background_color: "#ffffff",
+      highlight_color: "#ffffcc",
+      styles: @styles)
 
   def style() do
     @style_struct()
