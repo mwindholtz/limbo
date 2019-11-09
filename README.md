@@ -4,9 +4,13 @@ Experiment in **Test && Commit || Revert**
 
 ## Installation
 
-Add to deps()
+In `mix.ex`  ... add to deps()
+```elixir
+  {:limbo, "~> 0.1.5" }
 ```
-  {:limbo, "~> 0.1.3" }
+... add to project()
+```elixir
+   preferred_cli_env: ["limbo.high": :test, "limbo.low": :test]
 ```
 
 then run  
